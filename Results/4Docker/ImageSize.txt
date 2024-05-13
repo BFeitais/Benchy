@@ -1,0 +1,5 @@
+REPOSITORY                    TAG       IMAGE ID       CREATED                  SIZE
+benchy                        1.0       85ff05ec043f   Less than a second ago   93.7MB
+ubuntu                        latest    e4c58958181a   3 months ago             77.8MB
+gcr.io/k8s-minikube/kicbase   v0.0.40   c6cc01e60919   6 months ago             1.19GB
+hello-world                   latest    9c7a54a9a43c   8 months ago             13.3kB
