@@ -1,0 +1,46 @@
+sysbench 1.0.18 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Extra file open flags: (none)
+128 files, 32MiB each
+4GiB total file size
+Block size 16KiB
+Number of IO requests: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Initializing worker threads...
+
+Threads started!
+
+
+File operations:
+    reads/s:                      419.91
+    writes/s:                     279.94
+    fsyncs/s:                     896.80
+
+Throughput:
+    read, MiB/s:                  6.56
+    written, MiB/s:               4.37
+
+General statistics:
+    total time:                          120.0213s
+    total number of events:              191512
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.63
+         max:                                   21.55
+         95th percentile:                        3.49
+         sum:                               119716.89
+
+Threads fairness:
+    events (avg/stddev):           191512.0000/0.00
+    execution time (avg/stddev):   119.7169/0.00
+
