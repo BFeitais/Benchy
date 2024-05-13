@@ -1,0 +1,6 @@
+Untagged: benchy:1.0
+Deleted: sha256:06482f1322340652e88620b94bda908973afb9b8131cb28aac8b7f40af4304da
+
+real	0m0,029s
+user	0m0,014s
+sys	0m0,004s
