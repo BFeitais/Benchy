@@ -1,0 +1,4 @@
+REPOSITORY                TAG         IMAGE ID      CREATED                 SIZE
+localhost/benchy          1.0         cbe799e63236  Less than a second ago  96.4 MB
+docker.io/library/ubuntu  20.04       f78909c2b360  5 weeks ago             75.2 MB
+docker.io/library/ubuntu  latest      e4c58958181a  3 months ago            80.4 MB

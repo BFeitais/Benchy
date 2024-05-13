@@ -1,0 +1,7 @@
+Untagged: localhost/benchy:1.0
+Deleted: 111093a6657f464f0e54c077a8ec086eef59cf8d2da9eca40a4a4fcc191560cd
+Deleted: ec153c7c6eeccd0803e3004ac0e3e51127955ec896aa39ca20701111659f95ba
+
+real	0m0,127s
+user	0m0,122s
+sys	0m0,051s
