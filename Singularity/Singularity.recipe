@@ -1,0 +1,26 @@
+Bootstrap: docker
+From: ubuntu:20.04
+Stage: build
+
+%setup
+
+%files
+
+%environment
+
+%post 
+    apt-get -qq -y update && apt-get -qq -y install sysbench && rm -rf /var/lib/apt/lists/* && apt-get clean
+
+%runscript
+    sysbench cpu --num-threads=1 --cpu-max-prime=20000 run > resultsCPU1.txt \
+&& sysbench cpu --num-threads=2 --cpu-max-prime=20000 run > resultsCPU2.txt \
+&& sysbench memory --memory-block-size=1G --memory-total-size=20G --memory-oper=write run > resultsRAMwrite.txt \
+&& sysbench memory --memory-block-size=1G --memory-total-size=20G --memory-oper=read run > resultsRAMread.txt \
+&& sysbench fileio --file-total-size=4G --file-test-mode=rndrw --time=120 --max-requests=0 prepare \
+&& sysbench fileio --file-total-size=4G --file-test-mode=rndrw --time=120 --max-requests=0 run > resultsMEM.txt \
+&& sysbench fileio --file-total-size=4G --file-test-mode=rndrw --time=120 --max-requests=0 cleanup \
+&& exit \
+&& /bin/bash 
+
+%labels 
+    Author Bruno Feitais
